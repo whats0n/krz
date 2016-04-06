@@ -1,0 +1,46 @@
+---
+title: Index page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block left %}
+<img src="img/logo-in-en.png" alt="" class="logo">
+<div class="text">
+	<p>“Russian Drinking Culture” was founded in 2014 and became the first in Russia to promote premiu m spirits brands and the culture of Russian alcohol drinks consumption. The company’s unique character is in its commitment to reconstruct Russian spirits traditional recipes and on their basis create new unique recipes. Creating a multi-product spirits brand portfolio we pay close attention to a high level of ingredients quality and technology, as well as to branding and design.</p>
+	<p>The company  “Russian Drinking Culture” owns and manages “BryanskSpirtProm” distillery, one of the oldest distilleries in Russia. “BryanskSpirtProm” was established in 1899. A year 2015 was marked with a completion of a full-scale modernization of the production facilities. The fusion of ancient recipes, gained experience and modern technologies made it possible to produce a wide range of world class alcohol beverages. The company export products to more than 13 countries, including Germany, Great Britain and USA. It is a winner of 9 Grand Prix and 85 gold medals of the Russian and international alcoholic beverages fairs.</p>
+</div>
+<img src="img/ppl-en.png" alt="">
+{% endblock %}
+
+{% block right %}
+<div class="info">
+	<div class="info__top"></div>
+	<div class="info__inner">
+		<h2 class="title-h2 info__title">
+			<span>OUR BRANDS</span>
+		</h2>
+		<div class="info__text">
+			<p>They are produced in Russia and are created at the turn of two approaches – traditional and innovative. They are distinguished by three features – exquisite taste, 100% naturalness, affiliation with the Russian background. Innovation, fresh and creative design complete the list of the brands distinctive features. Being more affordable they will compete well with recognized international brands.</p>
+		</div>
+		<h2 class="title-h2">OUR<br>PORTFOLIO INCLUDES</h2>
+		<ul class="items">
+			<li class="item"><a href="#">
+				<div class="item__img"><img src="img/borschevka-en.png" alt=""></div>
+				<div class="item__text">Gastronomic<br>vodka<br><strong>40%</strong></div>
+			</a></li>
+			<li class="item"><a href="#">
+				<div class="item__img"><img src="img/homerecipe-en.png" alt=""></div>
+				<div class="item__text">bitter<br>liqueurs<br><strong>35%</strong></div>
+			</a></li>
+			<li class="item"><a href="#">
+				<div class="item__img"><img src="img/samozvety-en.png" alt=""></div>
+				<div class="item__text">sweet vermouth<br>type liqueurs<br><strong>20%</strong></div>
+			</a></li>
+		</ul>
+	</div>
+</div>
+{% endblock %}
+
+{% block footer %}
+    {% include "partials/_footer.html" %}
+{% endblock %}

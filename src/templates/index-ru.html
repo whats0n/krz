@@ -1,0 +1,36 @@
+---
+title: Index page
+---
+{% extends "layouts/_layout.html" %}
+
+{% block left %}
+<img src="img/logo-in-ru.png" alt="">
+{% endblock %}
+
+{% block right %}
+<form action="" class="form">
+	<div class="form__question">
+		<p>Укажите дату</p>
+		<p>Вашего рождения</p>
+	</div>
+	<div class="form__answer">
+		<select name="" id="">
+			<option value="ДД">ДД</option>
+			<option value="ДД">ДД</option>
+		</select>
+		<select name="" id="">
+			<option value="ММ">ММ</option>
+			<option value="ММ">ММ</option>
+		</select>
+		<select name="" id="">
+			<option value="ГГГГ">ГГГГ</option>
+			<option value="ГГГГ">ГГГГ</option>
+		</select>
+	</div>
+	<ul class="lang">
+		<li><a href="index-ru.html" class="is-active">русский</a></li>
+		<li><a href="index-en.html">english</a></li>
+	</ul>
+	<button type="submit" class="btn">Войти</button>
+</form>
+{% endblock %}

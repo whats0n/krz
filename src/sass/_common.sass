@@ -1,0 +1,105 @@
++font("Bodoni", bodoni72c-webfont)
+
+=bodoni
+	font-family: "Bodoni", Arial, sans-serif
+
+
+body
+	background: url(../img/bg.jpg) repeat center top
+	background-size: cover
+	font-size: 15px
+	line-height: 1.46
+	font-family: "Georgia"
+	letter-spacing: 0.02em
+	color: #000
+	min-width: 320px
+
+.out
+	max-width: 1290px
+	margin: 0 auto
+	+clr
+	overflow: hidden
+
+.content
+	+clr
+
+.left, .right
+	&-column
+		padding: 0 3%
+		text-align: center
+		+r(1280)
+			padding: 0 20px
+		+r(1024)
+			width: 100%
+			padding: 0 20px 20px
+		img
+			max-width: 100%
+		.logo
+			margin-bottom: 35px
+			width: 100%
+			max-width: 333px
+.left-column
+	float: left
+	width: 48%
+	padding-top: 35px
+	+r(1024)
+		padding-top: 35px
+
+.right-column
+	float: right
+	width: 52%
+
+.title-h2
+	color: #000
+	font-size: 27px
+	line-height: 26px
+	font-weight: normal
+p
+	text-align: justify
+a
+	text-decoration: none
+
+
+//footer
+.footer
+	padding: 15px 0 0
+	text-align: center
+	&__list
+		font-size: 0
+		margin: 0 -15px 17px
+		+r(1024)
+			margin: 0 auto 17px
+			max-width: 700px
+		li
+			display: inline-block
+			vertical-align: top
+			font-size: 22px
+			color: #98814c
+			padding: 0 55px
+			position: relative
+			line-height: 1
+			+r(1280)
+				padding: 0 20px
+				font-size: 18px
+			+r(1024)
+				display: block
+				padding-bottom: 15px
+			&:first-child
+				&:before
+					display: none
+			&:before
+				content: ""
+				position: absolute
+				top: 2px
+				height: 18px
+				width: 1px
+				background: #98814c
+				left: 0
+				+r(1024)
+					display: none
+		a
+			color: #98814c
+.bottom-img
+	display: block
+	margin: 0 auto 5px
+	max-width: 95%

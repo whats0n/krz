@@ -1,0 +1,197 @@
+.text
+	padding-bottom: 20px
+	p
+		margin-bottom: 25px
+
+.info
+	position: relative
+	padding: 0 4px 16px
+	+r(600)
+		margin: 0 -10px
+	&:before, &:after
+		content: ""
+		position: absolute
+		top: 0
+		bottom: 15px
+		width: 5px
+		+r(1024)
+			top: 15px
+	&:before
+		left: 0
+		background: url(../img/left-deco.png) bottom right
+	&:after
+		right: 0
+		background: url(../img/right-deco.png) bottom left
+	&__inner
+		background: #fff
+		box-shadow: 0 12px 5px 5px rgba(0, 0, 0, 0.1)
+		padding: 40px 20px 5px
+		&:before, &:after
+			content: ""
+			position: absolute
+			bottom: 0
+			width: 50%
+			height: 16px
+			background: url(../img/bottom-deco.png)
+		&:before
+			background-position: left bottom
+			left: 0
+		&:after
+			background-position: right bottom
+			right: 0
+	&__top
+		+r(1024)
+			height: 16px
+			position: relative
+			margin: 0 -4px
+			&:before, &:after
+				content: ""
+				position: absolute
+				top: 0
+				width: 50%
+				height: 16px
+				background: url(../img/top-deco.png)
+			&:before
+				background-position: left bottom
+				left: 0
+			&:after
+				background-position: right bottom
+				right: 0
+
+	&__text
+		padding: 0 60px 30px
+		+r(1280)
+			padding: 0 10px 30px
+		+r(600)
+			padding: 0 0 30px
+		p
+			color: #99824c
+	.title-h2
+		margin: 0 0 25px
+		text-transform: uppercase
+	&__title
+		span
+			display: inline-block
+			position: relative
+			padding: 0 38px
+			&:before, &:after
+				content: ""
+				position: absolute
+				top: 50%
+				background: url(../img/title-deco.png) no-repeat center
+				width: 20px
+				height: 3px
+				margin-top: -2px
+			&:before
+				left: 0
+			&:after
+				right: 0
+.items
+	font-size: 0
+	+r(1024)
+		max-width: 600px
+		margin: 0 auto
+.item
+	width: 33%
+	display: inline-block
+	vertical-align: top
+	+r(600)
+		width: 100%
+		padding-bottom: 20px
+	&__img
+		height: 450px
+		position: relative
+		+r(1280)
+			height: 400px
+		+r(600)
+			height: auto
+		img
+			position: absolute
+			bottom: 0
+			left: 15%
+			max-height: 100%
+			max-width: 100%
+			+r(600)
+				position: relative
+				left: auto
+				bottom: auto
+				margin-left: 10%
+			+r(480)
+				max-height: 300px
+	&__text
+		color: #99824c
+		font-size: 15px
+		line-height: 16px
+		strong
+			font-size: 17px
+			line-height: 19px
+			font-weight: normal
+
+.form
+	text-align: center
+	line-height: 1.3
+	+bodoni
+	padding: 20% 14%
+	+r(1024)
+		padding: 0px
+	&__question
+		padding-bottom: 35px
+		+r(600)
+			padding-bottom: 20px
+		p
+			font-size: 24px
+			text-align: center
+	&__answer
+		padding-bottom: 30px
+		+r(600)
+			padding-bottom: 20px
+	select
+		font-size: 27px
+		+bodoni
+		background: none
+		border: none
+		-webkit-appearance: none
+		-moz-appearance: none
+		-ms-appearance: none
+		-o-appearance: none
+		min-width: 70px
+		padding: 0 8px
+		cursor: pointer
+		+r(600)
+			font-size: 24px
+
+.btn
+	font-size: 27px
+	color: #000
+	+bodoni
+	text-transform: uppercase
+	border: none
+	background: none
+	transition: color 0.25s linear
+	&:hover
+		color: #b7aa77
+
+.lang
+	font-size: 0
+	padding-bottom: 20px
+	li
+		display: inline-block
+		vertical-align: top
+		padding: 0 15px
+		position: relative
+		&:first-child
+			&:before
+				display: none
+		&:before
+			content: ""
+			position: absolute
+			top: 2px
+			bottom: 2px
+			left: 0
+			width: 1px
+			background: #000
+	a
+		color: #000
+		font-size: 23px
+		&.is-active
+			font-weight: bold
