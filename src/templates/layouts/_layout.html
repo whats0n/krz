@@ -4,8 +4,11 @@
     {% include "layouts/_head.html" %}
     {# {% include "_media-tags.html" %} #}
   </head>
+  {% if ru %}
+  <body class="{{rus}}">
+  {% else %}
   <body>
-
+  {% endif %}
     <!-- BEGIN content -->
     <div class="out">
       <div class="content">

@@ -3,7 +3,6 @@
 =bodoni
 	font-family: "Bodoni", Arial, sans-serif
 
-
 body
 	background: url(../img/bg.jpg) repeat center top
 	background-size: cover
@@ -13,23 +12,31 @@ body
 	letter-spacing: 0.02em
 	color: #000
 	min-width: 320px
+	&.is-ru
+		letter-spacing: 0
 
 .out
-	max-width: 1290px
+	max-width: 1209px
 	margin: 0 auto
 	+clr
 	overflow: hidden
 
 .content
-	+clr
+	display: table
+	+r(1024)
+		display: block
+		
 
 .left, .right
 	&-column
-		padding: 0 3%
 		text-align: center
+		display: table-cell
+		vertical-align: top
+		position: relative
 		+r(1280)
-			padding: 0 20px
+			// padding: 0 20px
 		+r(1024)
+			display: block
 			width: 100%
 			padding: 0 20px 20px
 		img
@@ -39,67 +46,65 @@ body
 			width: 100%
 			max-width: 333px
 .left-column
-	float: left
-	width: 48%
-	padding-top: 35px
+	width: 45.33%
+	padding: 35px 3.228% 75px
 	+r(1024)
 		padding-top: 35px
 
 .right-column
-	float: right
-	width: 52%
+	width: 54.67%
+	padding: 0 3.226%
 
 .title-h2
 	color: #000
 	font-size: 27px
 	line-height: 26px
 	font-weight: normal
+	letter-spacing: 0.02em
 p
 	text-align: justify
 a
 	text-decoration: none
 
-
 //footer
 .footer
-	padding: 15px 0 0
+	padding: 15px 3.226% 0
 	text-align: center
 	&__list
-		font-size: 0
-		margin: 0 -15px 17px
+		font-size: 0.1px
+		margin: 0 0 17px
+		text-align: justify
 		+r(1024)
 			margin: 0 auto 17px
 			max-width: 700px
+			text-align: center
+		&:after
+			content: ''
+			display: inline-block
+			width: 100%
 		li
 			display: inline-block
 			vertical-align: top
-			font-size: 22px
+			font-size: 20px
 			color: #98814c
-			padding: 0 55px
 			position: relative
 			line-height: 1
 			+r(1280)
-				padding: 0 20px
 				font-size: 18px
 			+r(1024)
 				display: block
 				padding-bottom: 15px
-			&:first-child
-				&:before
-					display: none
-			&:before
-				content: ""
-				position: absolute
-				top: 2px
-				height: 18px
-				width: 1px
-				background: #98814c
-				left: 0
+			&.footer__divider
 				+r(1024)
 					display: none
+					
 		a
 			color: #98814c
 .bottom-img
 	display: block
 	margin: 0 auto 5px
-	max-width: 95%
+	max-width: 1209px
+	padding: 0 3.226%
+	font-size: 0
+	img
+		max-width: 100%

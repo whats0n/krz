@@ -1,7 +1,16 @@
 .text
-	padding-bottom: 20px
 	p
 		margin-bottom: 25px
+
+.text-img
+	position: absolute
+	bottom: 0
+	left: 0
+	right: 0
+	padding: 0 8.281%
+	+r(1024)
+		position: relative
+		padding: 0
 
 .info
 	position: relative
@@ -59,13 +68,14 @@
 				right: 0
 
 	&__text
-		padding: 0 60px 30px
+		padding: 0 10.487% 20px
 		+r(1280)
-			padding: 0 10px 30px
+			// padding: 0 10px 20px
 		+r(600)
-			padding: 0 0 30px
+			padding: 0 0 20px
 		p
 			color: #99824c
+			margin-bottom: 10px
 	.title-h2
 		margin: 0 0 25px
 		text-transform: uppercase
